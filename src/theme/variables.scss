@@ -1,0 +1,71 @@
+$font-path: "../assets/fonts";
+
+@import "ionic.globals";
+
+
+// Named Color Variables
+
+$colors: (
+	primary: #e60000,
+  font-color-primary:#212121,
+  font-color-secondary:#757575,
+  white:#fff,
+  borderColor:#bdbdbd,
+  highlight:#b3b3b3,
+  toastColor:#424242,
+  toastBackground:#333,
+  faqsBackground:#f3f3f3,
+  faqCardbackground:#424242,
+  red:red,
+  
+ );
+
+
+//--size
+
+$createHeight: 13rem;
+$buttonHeight:2.6rem;
+$headerHeight:2.4rem;
+$selectHeight:2.5rem;
+
+ $fontsize:2.1em;
+ $fontsizeLabel:1rem;
+ $fontsizeDescLength:.8rem;
+ $fontsizeFixkey:1rem;
+ $fontsizeTextarea:1rem;
+ $fontsizeButton:1.2rem;
+ $fontsizePlaceholder:.8rem;
+
+ $fontsizeMenulabel:1.2rem;
+ $fontsizeMenuIcon:2rem;
+ $fontsizeHeaderTitle:1.2rem;
+ $fontsizeUnlockdomain:2.1rem;
+ $fontsizeAlertmessage:1rem;
+ $fontsizeHeaderBackbutton:2rem;
+
+ $fontsizefaqContent:1rem;
+ $fontsizefaqHeader:1.2rem;
+ $fontsizeToast:1rem;
+ $fontsizeAlert:1rem;
+ //------------------Home
+ $fontsizeHomeIcon:11vh;
+ $fontsizeHomecolom:1.2vh;
+ $fontsizeHomeBlackHeader:2vh;
+ $fontsizeHomeAppname:2vh;
+ $fontsizeHomeBox:2.5vh;
+
+
+ $fontsizeBody14:14px;
+ $fontsizeBody16:16px;
+ $fontsizeBody20:20px;
+ $fontsizeBody24:24px;
+
+ $linkColor: #e60000;
+ 
+
+// App Theme
+@import "ionic.theme.default";
+@import "ionic.ionicons";
+@import "roboto";
+@import "noto-sans";
+ 

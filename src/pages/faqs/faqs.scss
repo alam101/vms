@@ -1,0 +1,38 @@
+page-faqs {
+  ion-card{
+      margin-bottom:18px !important;
+    ion-card-header{
+        color:color($colors,font-color-primary) !important;
+        white-space: normal;
+        font-weight: normal;
+        font-size:$fontsizefaqHeader !important;
+        background: color($colors,faqsBackground);
+    }
+    ion-card-content{
+      color:color($colors,font-color-primary);
+      background: color($colors,white);
+      padding-top: 10px !important;
+      a{
+          color:color($colors,primary);
+      }
+    }
+  }
+  .highlight{
+      margin-top:22px;
+      box-shadow: 0 10px 7px rgba(0, 0, 0, 0.3) !important;
+      ion-card-header{
+      color: color($colors,white) !important;
+      white-space: normal;
+      font-weight: normal;
+      background: color($colors,faqCardbackground);
+      }
+
+      ion-card-content{
+        min-height: 60px !important;
+        height: 100%;
+        font-size: $fontsizefaqContent !important;
+        // height: 60px;
+      }
+  }
+}
+

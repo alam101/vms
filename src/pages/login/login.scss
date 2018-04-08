@@ -1,0 +1,19 @@
+page-login {
+ ion-list{
+     position: relative;
+     top:25%;
+    ion-item{
+        padding-left:0 !important;
+        .item-inner{
+            padding-left: 15px;
+        }
+    }
+     ion-label{
+         padding-left: 0 !important;
+     }
+ p{
+    font-size: 1rem !important;
+    color: red !important;
+ }    
+ }
+}

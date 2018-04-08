@@ -1,0 +1,48 @@
+[{
+"createIncident":[
+                {"prefix":"INC","issueType":"Handset email issue"},
+                {"prefix":"INC","issueType":"Outlook issue"},
+                {"prefix":"INC","issueType":"Internet issue"},
+                {"prefix":"INC","issueType":"Laptop/Desktop issue"},
+                {"prefix":"INC","issueType":"Printer issue"},
+                {"prefix":"INC","issueType":"VPN issue"},
+                {"prefix":"INC","issueType":"EVO issue"},
+                {"prefix":"INC","issueType":"Wifi issue"},
+                {"prefix":"INC","issueType":"VC bridge required"},
+                {"prefix":"INC","issueType":"Configuration required"}
+            ]
+},
+{
+"approveRequest":[
+                {"prefix":"APPROVE"}
+                ]
+},
+{
+"resetPassword":[
+                {"prefix":"ADR"}
+                ]
+},
+{
+"unlockDomain":[
+                {"prefix":"ADU"}
+                ]
+},
+
+{
+"FAQs":[
+    {"sortOrder":1,"question":"What is the link for IT Service Desk?","answer":"<a href='https://itservicedesk.vodafone.co.in//shared/login.jsp?/home'>https://itservicedesk.vodafone.co.in//shared/login.jsp?/home</a>"},
+    {"sortOrder":2,"question":"What is the contact number for IT Service Desk?","answer":"You can call 9765561500"},
+    {"sortOrder":3,"question":"How can I raise a ticket for any issue?","answer":"You can use any of the following options to report an issue:<br> a) Email - ITSD.INDIA@vodafone.com<br>b) Phone - 9765561500 <br>c) SMS - INC issue to 56565"},
+    {"sortOrder":4,"question":"What are the SMS Services for quick assistance?","answer":"You can use the following formats and send an SMS through your registered mobile number to 56565.<br>a) To Reset Domain ID password<br>ADR &lt;space&gt; &lt;Domain ID&gt;<br><br>b) To Unlock Domain ID<br>ADU &lt;space&gt; &lt;Domain ID&gt;<br><br>c) To Approve a Service Request<br>Approve &lt;space&gt; &lt;Request-Number&gt;<br><br>d) To Reject a Service Request<br>Rejected &lt;space&gt; &lt;Request-Number&gt;"},
+    {"sortOrder":5,"question":"What are the joining formalities for an Associate?","answer":"You need to complete Self-Registration on SAM portal. (Vendor registration process for HR)"},
+    {"sortOrder":6,"question":"What is the SAM URL?","answer":"<a href='https://bpw.vodafone.in/accessmanager/'>https://bpw.vodafone.in/accessmanager/</a>"},
+    {"sortOrder":7,"question":"What are the required vendor details for Self-Registration?","answer":"a) Full Name<br>b) Mobile Number<br>c) Designation<br>d) PAN / Aadhaar Card Number<br>e) Vendor Organization Email ID<br>f) Vendor Organization Employee ID"},
+    {"sortOrder":9,"question":"Which Remedy request needs to be raised for Laptop/Desktop Allocation, Transfer, Removal, Lost, Movement & Software Installation?","answer":"IMAC request"},
+    {"sortOrder":10,"question":"Which Remedy request needs to be raised for other additional accesses of On-Role & Off-Role users?","answer":"Additional Access - Lync, VPN, External Domain Email Rights, Internet, etc.ID Access form"},
+    {"sortOrder":11,"question":"Which Remedy request needs to be raised for Off-Role Employees Generic & Email ID Creation, Deletion & Reactivation?","answer":"User ID Management"},
+    {"sortOrder":12,"question":"Which Remedy request needs to be raised for re-activation of On-Role Employees?","answer":"User ID Management"},
+    {"sortOrder":13,"question":"Which Remedy request needs to be raised for On-role Employees Separation & Transfer?","answer":"Onboarding /Transfer/ Separation form"}
+]
+}
+
+]

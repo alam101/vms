@@ -1,0 +1,42 @@
+<ion-header>
+    <ion-navbar hideBackButton="false">
+     <ion-title>
+      Create Incident
+     </ion-title>
+     </ion-navbar>
+  </ion-header>
+<ion-content padding class="no-scroll">
+    <form (submit)="sendSMS()">
+                
+   <ion-list no-lines class="no-scroll">
+      <ion-item>
+          <div class="customLabel">Top 10 Issues</div>
+          <div class="selectDiv">
+           <select [(ngModel)]="incident" (change)="getIssueType(incident);" name="select">
+                  <option>Select</option>
+                  <option *ngFor="let issue of issueTypes">{{issue}}</option>
+                  <option>Others</option>
+            </select>
+        </div>
+      </ion-item>
+    
+      <ion-item class="newHeight" \>
+            
+            <div class="customLabel"> SMS Preview <span>({{prefix}})</span> </div>
+              <textarea [(ngModel)]="description"  (input)="validateLength($event)" placeholder="Description" name="textarea"></textarea>
+              <span class="descLength floatleft">Send to 56565</span>
+              <span class="descLength">{{(definedLength-description.length)}} chars</span>
+        
+      </ion-item>
+      <ion-item class="action">
+          <button ion-button full>Submit</button><br>
+         
+       </ion-item>
+    
+  </ion-list>
+ 
+   </form>
+   <ion-list no-lines class="can"><ion-item class="action">
+    <button class="cancel" class="cancel" ion-button full (click)="cancel()">Cancel</button>
+   </ion-item></ion-list>
+</ion-content>

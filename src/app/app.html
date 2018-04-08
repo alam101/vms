@@ -1,0 +1,39 @@
+<ion-menu [content]="content" persistent="true">
+  <ion-toolbar id="menuHeader">
+    <ion-title style="padding:10px;">
+      Econnect
+
+    </ion-title>
+  </ion-toolbar>
+  <ion-content class="menu">
+    <ion-list class="marginList">
+      <button ion-item (click)="Home()">
+                            <ion-icon ios="ios-home-outline" md="ios-home-outline"></ion-icon> <span>Home</span>
+            </button>
+
+      <ion-list-header>
+        App Services
+      </ion-list-header>
+      <button ion-item (click)="createIncident();" class="removeBootomBorder">
+                    <ion-icon ios="ios-add-circle-outline" md="ios-add-circle-outline"></ion-icon><span>Create Incident</span>
+    </button>
+      <button ion-item (click)="approvalRequest();" class="removeBootomBorder">
+            <ion-icon ios="ios-checkmark-circle-outline" md="ios-checkmark-circle-outline"></ion-icon><span>Approve Request</span>
+     </button>
+      <button ion-item menu-close (click)="unlockDomain();" class="removeBootomBorder">  
+    <ion-icon ios="ios-unlock-outline" md="ios-unlock-outline" class="unlockDomain"></ion-icon><span>Unlock Domain ID</span>     
+                    </button>
+      <button ion-item menu-close (click)="resetPassword();" class="">  
+                                    <ion-icon ios="ios-refresh-circle-outline" md="ios-refresh-circle-outline"></ion-icon><span>Reset Password</span>   
+                    </button>
+      <button ion-item menu-close class="faq" (click)="Faqs()">  
+                    <ion-icon ios="ios-bookmarks-outline" md="ios-bookmarks-outline"></ion-icon>   
+                    <span>FAQs</span>
+    </button>
+
+    </ion-list>
+
+  </ion-content>
+
+</ion-menu>
+<ion-nav [root]="rootPage" [class]="selectedTheme" #content swipeBackEnabled="false"></ion-nav>

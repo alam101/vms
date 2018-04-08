@@ -1,0 +1,22 @@
+
+<ion-header>
+
+  <ion-navbar hideBackButton="false">
+    <ion-title>FAQs</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding >
+  <ion-card  *ngFor="let faq of faqs" [ngClass]="{'highlight':section==faq.sortOrder}" (click)="toggleOption(faq.sortOrder,$event)">
+    <ion-card-header>
+      {{faq.question}}
+    </ion-card-header>
+    <ion-card-content *ngIf="section==faq.sortOrder">
+     <div [innerHTML]="faq.answer"></div>
+    </ion-card-content>
+   
+   </ion-card>
+  
+</ion-content>

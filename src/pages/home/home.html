@@ -1,0 +1,65 @@
+<ion-header>
+    <ion-navbar hideBackButton="true">
+      <button ion-button icon-only menuToggle class="menu-icon-size">
+        <ion-icon name="menu"  ></ion-icon>
+      </button>
+     <ion-title>
+       Home
+     </ion-title>
+     </ion-navbar>
+  </ion-header>
+<ion-content class="home">
+      
+    <ion-grid class="primaryGrid">
+        <ion-row >
+           <ion-col class="square">
+            <ion-card tappable class="createIncident ripple" (click)="createIncident(id=x)"> 
+              
+                <ion-icon ios="ios-add-circle-outline" md="ios-add-circle-outline"></ion-icon><br>
+             
+               <div> Create Incident</div>
+           
+           </ion-card>
+           </ion-col>
+           <ion-col class="square ">
+              <ion-card tappable class="approve ripple" (click)="approveRequest()"> 
+                  
+                  <ion-icon ios="ios-checkmark-circle-outline" md="ios-checkmark-circle-outline"></ion-icon><br>
+               <div>Approve Request</div> 
+               
+                </ion-card>
+           </ion-col>
+           </ion-row>
+           <ion-row>
+              <ion-col class="square">
+               <ion-card class="createIncident" (click)="resetPassword()"> 
+                  <ion-icon ios="ios-refresh-circle-outline" md="ios-refresh-circle-outline"></ion-icon><br>
+                  <div>Reset Password</div> 
+              </ion-card>
+              </ion-col>
+              <ion-col class="square">
+                 <ion-card class="approve" (click)="unlockDomain()"> 
+                    <ion-icon ios="ios-unlock-outline" md="ios-unlock-outline"></ion-icon><br>
+                  <div>Unlock Domain ID</div> 
+                   </ion-card>
+              </ion-col>
+              </ion-row> 
+           </ion-grid> 
+           <ion-grid class="managecard">
+              <ion-card>
+                        <div class="apps blackHead">Vodafone Apps</div>               
+                  <ion-row class="vodaApp">
+                    <ion-col text-center (click)="mSafe()"><img src="assets/images/voda_icon_round.png"></ion-col>
+                    <ion-col text-center (click)="CXO()"><img src="assets/images/cxo_icon.png" class="CXO"></ion-col>
+                    <ion-col text-center (click)="EVO()"><img src="assets/images/voda_icon_round.png"></ion-col>
+                    </ion-row>
+                    <ion-row class="appName">
+                        <ion-col text-center><div>mSafe</div></ion-col>
+                        <ion-col text-center><div>CXO Dashboard</div></ion-col>
+                        <ion-col text-center><div>EVO</div></ion-col>
+                   </ion-row> 
+                </ion-card> 
+                
+           </ion-grid>
+ 
+</ion-content>

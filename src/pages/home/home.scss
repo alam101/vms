@@ -1,0 +1,187 @@
+page-home{
+ion-content{
+overflow-y: hidden;
+
+}
+.square{
+    text-align: center;
+    width: 100%;
+    ion-card{
+        position: absolute !important;
+        width: 90% !important;
+        height: 90% !important;
+    }
+}
+.square:after{
+    content: "";
+    display: block;
+     padding-bottom: 100%;
+}
+
+
+
+.primaryGrid{
+  
+    ion-card:after {
+        content: "";
+        background: color($colors, font-color-secondary);
+         padding: 400%;
+        opacity: 0;
+        transition: all 1.5s;
+        right: 10px;
+        position: relative;
+    }
+    ion-card:active:after {
+        padding: 0;
+        margin: 0;
+        opacity: .4;
+        transition:.4s;
+        
+    }
+   
+
+    ion-row{
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+        
+    }
+    top: 0px;
+    position: relative;
+    ion-icon{
+position: relative;
+top: 28%;
+font-size: $fontsizeHomeIcon;
+color:color($colors,primary);
+}
+
+}
+.CXO{
+border-radius: 6px;
+}
+.createIncident{
+right: -3px;
+margin-left:8px !important; 
+position: relative;
+div{
+    position: absolute;
+    text-align: center;
+    bottom: 5px;
+    width: 100%;
+    margin: 0px -10px;
+    font-size: $fontsizeHomeBox !important;
+  }
+}
+.approve{
+left: -3px;
+margin-right:8px !important; 
+position: relative;
+div{
+position: absolute;
+text-align: center;
+bottom: 5px;
+width: 100%;
+margin: 0px -10px;
+font-size: $fontsizeHomeBox !important;
+//text-shadow: 2px 5px 10px #f3f3f3;
+
+}
+}
+ion-grid.primaryGrid{
+padding-left: 12px !important;
+padding-right: 12px !important;
+padding-top: 15px;
+ion-row:nth-child(1){
+padding-bottom:5px !important;
+}
+ion-row{
+padding: 0 !important;
+ion-col{
+padding: 0 !important;
+
+ion-card{
+padding:10px;
+height: 93.5%;
+text-align: center;
+border-bottom: 3px solid color($colors, primary);
+border-radius: 4px;
+
+}
+
+ion-card:nth-child(2){
+margin-left: 8px;
+}
+}
+
+}
+}
+
+.managecard{
+    position: absolute;
+    bottom:0;
+    padding: 0;
+}
+    .managecard ion-card{
+        width: 100%;
+        margin: 0 auto;
+        height: 100%;
+        background: color($colors, toastColor);
+        padding-bottom: 10px;
+        border-radius: 0 !important;
+        min-height: 140px;
+        img{
+            width: 40%;
+            text-align: center;
+            margin: 0 auto;
+        }
+    }
+    padding: 40px 0px 0px 0px;
+
+background: color($colors, font-color-primary);
+position: absolute;
+bottom: 50px;
+div.apps{
+color:color($colors, white);
+padding-left: 19px;
+
+}
+ion-row{
+    ion-col{
+        font-size: $fontsizeHomecolom;
+        background: color($colors, white);
+        position: relative;
+        
+        }
+}
+.blackHead{
+    background: color($colors, font-color-primary) !important;
+    margin-top: 0;
+    padding-top:10px;
+    padding-bottom:10px;
+    margin-bottom: 10px;
+    font-size:$fontsizeHomeAppname !important;
+    
+}
+ion-row.vodaApp {
+ margin:0 !important;
+ ion-col{
+     background: color($colors, toastColor);
+ }
+
+}
+ion-row.appName {
+    margin: 0 !important;
+ ion-col{
+        background: color($colors, toastColor) !important;
+     div{
+         font-size:$fontsizeHomeAppname;
+         color:color($colors, white);
+         white-space: nowrap;
+        // white-space: nowrap;
+     }
+ }
+}
+
+
+
+}
+

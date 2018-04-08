@@ -1,0 +1,209 @@
+
+
+
+
+  @media (max-width: 1024px) {
+    html{
+        font-size: $fontsizeBody20 !important;
+    }
+        .menu-inner{
+            width:450px;
+        }
+        .marginList {
+            margin-top: 51px;
+        }
+        .menu .list-ios{
+            margin-top: 63px;
+        }
+        .alert-wrapper{
+            max-width:400px !important;
+        }
+        .action{
+            margin-top: 7%;
+            margin-bottom: 0px;
+        }
+  }
+
+  
+  @media (max-width: 680px) {
+      html{
+        font-size: $fontsizeBody16 !important;
+      }
+      .menu-inner{
+        width:285px !important;
+    }
+   
+    .action{
+        margin-top: 0;
+        margin-bottom: 0px;
+    }
+    .marginList {
+        margin-top: 51px;
+    }
+    .menu .list-ios{
+        margin-top: 63px;
+    }
+    .alert-wrapper{
+        max-width:330px !important;
+    }
+  }
+  .home .scroll-content{
+      margin-top:51px !important; 
+  }
+  .no-scroll .scroll-content{
+  //  overflow-y: hidden;
+    }
+  @media (max-width: 480px) {
+      html{
+          font-size: $fontsizeBody16 !important;
+      }
+      .menu-inner{
+        width:285px !important;
+    }
+    .action{
+        margin-top: 0;
+        margin-bottom: 0px;
+    }
+    .marginList {
+        margin-top: 51px;
+    }
+    .menu .list-ios{
+        margin-top: 63px;
+    }
+    .alert-wrapper{
+        max-width:330px !important;
+    }
+    
+  } 
+
+ion-content{
+    z-index:0;
+} 
+.action ion-label.label.label-ios{
+    height:65px;
+}
+button{
+    z-index: 1;
+   
+    ion-icon.back-button-icon-md{
+        font-size: $fontsizeHeaderBackbutton !important;
+    }
+}
+h3{
+    color:color($colors, font-color-primary) !important;
+}
+.back-button-ios{
+    min-height: auto !important;
+}
+.toast-wrapper {
+    background: color($colors, toastBackground);
+    border-radius: 5px;
+    width: 60% !important;
+    bottom: 2% !important;
+   .toast-container{
+        background-color: color($colors, toastColor);
+        border-radius: 10px;
+        .toast-message{
+            text-align: center;
+            font-size:$fontsizeToast;
+            white-space: nowrap;
+        }
+    } 
+}
+ .alert-message{
+     color: color($colors, font-color-primary) !important;
+      font-size: $fontsizeAlertmessage !important;
+   }
+   .alert-button{
+    font-size: $fontsizeAlert;
+   }  
+  
+.fixed-content{
+    margin-top: 0 !important;
+} 
+.highlight{
+    background: color($colors, borderColor);
+}
+
+.toolbar-ios {
+    padding: 4px;
+    min-height: 51px;
+}
+.back-button-icon-ios{
+    font-size:1.2rem !important;
+}
+
+.unlockDomain{
+    font-size: $fontsizeUnlockdomain !important;
+    padding-right: 13px !important;
+    padding-left: 2px;
+   
+}
+.faq{
+    border-bottom: 1px solid color($colors, borderColor);
+   
+}
+
+body{
+    ion-app{
+        font-family: "Roboto" !important;
+        
+    }
+}
+.toolbar-title, .toolbar-title-ios{
+    color:color($colors, white) !important;
+    text-align: center;
+    font-size: $fontsizeHeaderTitle !important;
+    font-weight: normal !important;
+}
+.bar-button-default-md, .bar-button-clear-md-default, .bar-button-md-default {
+    color: color($colors, white);
+    background-color: transparent;
+}
+// .marginList{
+//     position:relative;
+//     top: 9%;
+// }
+.marginList{
+
+    button{
+       
+        font-family: 'roboto' !important;
+        padding-left: 0 !important; 
+        ion-label{
+            font-size: $fontsizeMenulabel !important;
+        }
+    }
+}
+ ion-label{
+    color: color($colors, font-color-primary) !important;
+    text-align:left !important;
+    font-weight:normal !important;
+    padding-left: 16px !important;
+    span{
+        position:relative;
+        top:-5px;
+    }
+    ion-icon{
+        padding-right: 10px;
+        font-size: $fontsizeMenuIcon !important;
+    }
+ }
+   .removeBootomBorder .item-inner{
+       border-bottom: none !important;
+   }
+    
+ button{
+    text-transform: capitalize !important;
+ }
+ion-list-header{
+    border-bottom: none !important;
+    margin-bottom: 0 !important;
+    ion-label{
+        margin-bottom: 0;
+        padding-left: 0 !important;
+        font-size: $fontsizeMenulabel !important;
+        text-transform: capitalize;
+    }
+}
+ 
