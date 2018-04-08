@@ -1,1 +1,1 @@
-# projectVodafoneEconnectFrontend
+# projectVMSFrontend
