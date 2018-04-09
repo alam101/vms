@@ -1,0 +1,25 @@
+footer {
+ion-footer{
+    height: 56px;
+    bottom: 6px;
+ ion-buttons{
+     button{
+         font-size: 1rem !important;
+         background: color($colors, footer) !important;
+         ion-icon{
+             text-align: center;
+         }
+        font-size: 1rem;
+     }
+ }
+
+ ion-toolbar{
+     .toolbar-background,.toolbar-background-ios{
+        background: color($colors, footer);
+     }
+    
+ }
+}
+
+
+}
